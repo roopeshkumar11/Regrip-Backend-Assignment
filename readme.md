@@ -110,14 +110,6 @@ API endpoints are documented using Swagger.
 ---
 
 
-
-This version is fully formatted, clean, and ready to paste directly into a `README.md`.  
-
-If you want, I can also make a **1-page ultra-slim version** perfect for submitting with the assignment—it keeps everything professional but reduces length.  
-
-Do you want me to do that?
-
-
 ## Floder Structure
 
 - src/
@@ -161,3 +153,12 @@ Do you want me to do that?
 | POST   | /api/tasks     | Create a new task          |
 | PUT    | /api/tasks/:id | Update a task              |
 | DELETE | /api/tasks/:id | Delete a task              |
+
+
+
+
+This version is fully formatted, clean, and ready to paste directly into a `README.md`.  
+
+If you want, I can also make a **1-page ultra-slim version** perfect for submitting with the assignment—it keeps everything professional but reduces length.  
+
+Do you want me to do that?
