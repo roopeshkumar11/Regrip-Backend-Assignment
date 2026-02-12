@@ -162,3 +162,16 @@ This version is fully formatted, clean, and ready to paste directly into a `READ
 If you want, I can also make a **1-page ultra-slim version** perfect for submitting with the assignment—it keeps everything professional but reduces length.  
 
 Do you want me to do that?
+
+
+## API Documentation
+
+You can view and test the Task Management API using **Postman**:
+
+[Open API in Postman](https://www.postman.com/study3-8479/regrip-backend/request/36616432-deee29a2-f5ad-4c4a-acda-102a96ef3af1?tab=body)
+
+> This Postman collection contains all endpoints for:
+> - Authentication (Send OTP, Verify OTP)
+> - Task Management (Create, Read, Update, Delete Tasks)
+> 
+> You can import the collection into Postman and test the API directly.
