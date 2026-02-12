@@ -11,14 +11,12 @@ The backend provides secure user authentication, task management functionality, 
 - **Framework:** Express.js  
 - **Database:** MySQL / PostgreSQL (choose as per preference)  
 - **Authentication:** JWT with email-based OTP  
-- **Documentation:** Swagger  
+- **Documentation:** Postman 
 
 **Libraries & Tools Used:**  
 - `jsonwebtoken` – For JWT token generation and verification  
-- `bcryptjs` – Password/OTP hashing  
 - `express-rate-limit` – Rate limiting for security  
 - `express-validator` – Input validation and sanitization  
-- `winston` / `morgan` – Activity logging  
 - `dotenv` – Environment variable management  
 
 **Design Decisions:**  
@@ -63,14 +61,22 @@ The system logs critical events in the database for auditing:
 ## 5. Deployment
 The backend is deployed and publicly accessible.  
 - **Hosting Platforms:** Render, Railway, AWS, or Heroku (choose one)  
-- **Hosted Backend URL:** `<YOUR_HOSTED_BACKEND_URL>`  
+- **Hosted Backend URL:** `[(https://regrip-backend-assignment.onrender.com)]`  
 
 ---
 
-## 6. API Documentation
-API endpoints are documented using Swagger.  
-- **Swagger Documentation Link:** `<YOUR_SWAGGER_DOCS_LINK>`  
 
+## 6. API Documentation
+
+You can view and test the Task Management API using **Postman**:
+
+[Open API in Postman](https://www.postman.com/study3-8479/regrip-backend/request/36616432-deee29a2-f5ad-4c4a-acda-102a96ef3af1?tab=body)
+
+> This Postman collection contains all endpoints for:
+> - Authentication (Send OTP, Verify OTP)
+> - Task Management (Create, Read, Update, Delete Tasks)
+> 
+> You can import the collection into Postman and test the API directly.
 ---
 
 ## 7. Running Locally
@@ -164,14 +170,4 @@ If you want, I can also make a **1-page ultra-slim version** perfect for submitt
 Do you want me to do that?
 
 
-## API Documentation
 
-You can view and test the Task Management API using **Postman**:
-
-[Open API in Postman](https://www.postman.com/study3-8479/regrip-backend/request/36616432-deee29a2-f5ad-4c4a-acda-102a96ef3af1?tab=body)
-
-> This Postman collection contains all endpoints for:
-> - Authentication (Send OTP, Verify OTP)
-> - Task Management (Create, Read, Update, Delete Tasks)
-> 
-> You can import the collection into Postman and test the API directly.
