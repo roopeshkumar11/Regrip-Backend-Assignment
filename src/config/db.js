@@ -26,37 +26,4 @@ const connectDB = async () => {
 connectDB();
 
 export default sequelize;
-// import { Sequelize } from "sequelize";
-// import dotenv from "dotenv";
-
-// dotenv.config(); // load .env
-
-// if (!process.env.DATABASE_URL) {
-//   throw new Error("DATABASE_URL not found in .env");
-// }
-
-// const sequelize = new Sequelize(process.env.DATABASE_URL, {
-//   dialect: "postgres",
-//   protocol: "postgres",
-//   logging: false,
-//   dialectOptions: {
-//     ssl: {
-//       require: true,
-//       rejectUnauthorized: false, // Supabase requires SSL
-//     },
-//   },
-// });
-
-// const connectDB = async () => {
-//   try {
-//     await sequelize.authenticate();
-//     console.log("PostgreSQL Connected via Supabase ✅");
-//   } catch (error) {
-//     console.error("DB connection error:", error);
-//   }
-// };
-
-// connectDB();
-
-// export default sequelize;
 
