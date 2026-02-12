@@ -60,8 +60,8 @@ The system logs critical events in the database for auditing:
 
 ## 5. Deployment
 The backend is deployed and publicly accessible.  
-- **Hosting Platforms:** Render, Railway, AWS, or Heroku (choose one)  
-- **Hosted Backend URL:** `[(https://regrip-backend-assignment.onrender.com)]`  
+- **Hosting Platforms:** Render
+- **Hosted Backend URL:** [(https://regrip-backend-assignment.onrender.com)] 
 
 ---
 
@@ -75,7 +75,6 @@ You can view and test the Task Management API using **Postman**:
 > This Postman collection contains all endpoints for:
 > - Authentication (Send OTP, Verify OTP)
 > - Task Management (Create, Read, Update, Delete Tasks)
-> 
 > You can import the collection into Postman and test the API directly.
 ---
 
