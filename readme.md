@@ -83,9 +83,9 @@ API endpoints are documented using Swagger.
 ---
 ### Steps
 1. Clone the repository:  
-   ```bash
-   git clone <REPO_URL>
-   cd <PROJECT_FOLDER>
+  
+   - git clone [(https://github.com/roopeshkumar11/Regrip-Backend-Assignment.git)]
+   
 2. Install dependencies:
 
 - npm install
