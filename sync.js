@@ -6,3 +6,4 @@ await sequelize.sync({ alter: true });
 
 console.log("Databse created successfully");
 process.exit();
+ 
