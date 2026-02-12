@@ -10,7 +10,7 @@ export const createTask = async (req, res) => {
       title,
       description,
       status,
-      userId: req.user.id, // important
+      userId: req.user.id, 
     });
 
     res.status(201).json({
@@ -24,7 +24,6 @@ export const createTask = async (req, res) => {
 
 
 
-// GET ALL TASKS (only user tasks)
 export const getTasks = async (req, res) => {
   try {
     const tasks = await Task.findAll({
@@ -40,13 +39,12 @@ export const getTasks = async (req, res) => {
 
 
 
-// UPDATE TASK (ownership check)
 export const updateTask = async (req, res) => {
   try {
     const { id } = req.params;
 
     const task = await Task.findOne({
-      where: { id, userId: req.user.id }, // 🔥 ownership check
+      where: { id, userId: req.user.id },
     });
 
     if (!task) {
@@ -68,13 +66,13 @@ export const updateTask = async (req, res) => {
 
 
 
-// DELETE TASK (ownership check)
+
 export const deleteTask = async (req, res) => {
   try {
     const { id } = req.params;
 
     const task = await Task.findOne({
-      where: { id, userId: req.user.id }, // 🔥 ownership check
+      where: { id, userId: req.user.id }, 
     });
 
     if (!task) {

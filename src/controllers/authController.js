@@ -3,7 +3,7 @@ import generateOTP from "../untils/generateOTP.js";
 import sendEmail from "../untils/sendEmail.js";
 import generateToken from "../untils/jwt.js";
 
-// SEND OTP
+
 export const sendOTP = async (req, res) => {
   try {
     const { email, name } = req.body;
@@ -19,16 +19,16 @@ export const sendOTP = async (req, res) => {
     }
 
     const otp = generateOTP();
-    const otpExpiry = new Date(Date.now() + 5 * 60 * 1000); // 5 min
+    const otpExpiry = new Date(Date.now() + 5 * 60 * 1000); 
 
     user.otp = otp;
     user.otpExpiry = otpExpiry;
     await user.save();
 
-    // send email
+
     await sendEmail(email, "Your OTP", `Your OTP is ${otp}`);
 
-    // ⭐ activity log
+ 
     await logActivity({
       userId: user.id,
       action: "OTP_SENT",
@@ -44,7 +44,7 @@ export const sendOTP = async (req, res) => {
 };
 
 
-// ================= VERIFY OTP =================
+
 export const verifyOTP = async (req, res) => {
   try {
     const { email, otp } = req.body;
@@ -83,14 +83,14 @@ export const verifyOTP = async (req, res) => {
       return res.status(400).json({ message: "OTP expired" });
     }
 
-    // success login
+ 
     user.isVerified = true;
     user.otp = null;
     await user.save();
 
     const token = generateToken(user);
 
-    // ⭐ success log
+   
     await logActivity({
       userId: user.id,
       action: "LOGIN_SUCCESS",
