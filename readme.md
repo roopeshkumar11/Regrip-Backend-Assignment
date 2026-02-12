@@ -116,3 +116,38 @@ This version is fully formatted, clean, and ready to paste directly into a `READ
 If you want, I can also make a **1-page ultra-slim version** perfect for submitting with the assignment—it keeps everything professional but reduces length.  
 
 Do you want me to do that?
+
+
+## Floder Structure
+
+- src/
+- config/
+  - db.js                 # Database configuration
+- controllers/
+  - authController.js     # Handles authentication logic
+  - taskController.js     # Handles task CRUD operations
+- middleware/
+  - apiRateLimiter.js     # Global API rate limiter
+  - authMiddleware.js     # JWT authentication middleware
+  - authRateLimiter.js    # Auth-specific rate limiter
+- models/
+  - ActivityLog.models.js # Activity log schema
+  - Task.models.js        # Task schema
+  - User.models.js        # User schema
+- routes/
+  - authRoutes.js         # Authentication routes
+  - taskRoutes.js         # Task routes
+- utils/
+  - generateOTP.js        # Function to generate OTP
+  - jwt.js                # JWT token generation & verification
+  - logger.js             # Logging utility
+  - sendEmail.js          # Email sending utility
+- app.js                  # Express app setup
+- index.js                # Entry point
+- sync.js                 # Optional DB sync script
+- .env                    # Environment variables
+- package.json            # Project dependencies
+- package-lock.json       # Lockfile
+- node_modules/           # Installed modules
+- readme.md               # Project documentation
+               # Project documentation
