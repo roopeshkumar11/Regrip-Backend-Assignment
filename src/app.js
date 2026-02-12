@@ -2,10 +2,12 @@ import express from "express";
 import authrouter from "./routes/authRoutes.js";
 import taskrouter from "./routes/taskRoutes.js";
 import apiLimiter from "./middlware/apiRateLimiter.js";
+import cors from "cors";
 import dotenv from "dotenv"
 const app=express();
 
 dotenv.config()
+app.use(cors())
 app.use(express.json());
 app.use("/api", apiLimiter);
 app.use("/api/auth", authrouter);
