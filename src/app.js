@@ -15,10 +15,14 @@ app.use("/api/tasks",taskrouter);
 
 
 app.get("/", (req, res) => {
-    res.status(200).json({
-        message: "Welcome! API is live and running 🚀"
-    });
+  res.status(200).json({
+    success: true,
+    message: "Welcome! Task Management API is live and running successfully.",
+    suggestion: "Use /api/auth for authentication and /api/tasks to manage tasks.",
+    documentation: "Check Postman docs for full API usage."
+  });
 });
+
 
 
 export default app;
