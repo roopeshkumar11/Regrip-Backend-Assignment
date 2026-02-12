@@ -151,3 +151,13 @@ Do you want me to do that?
 - node_modules/           # Installed modules
 - readme.md               # Project documentation
                # Project documentation
+
+
+
+## API Endpoints
+| Method | Endpoint       | Description                |
+| ------ | -------------- | -------------------------- |
+| GET    | /api/tasks     | Get all tasks for the user |
+| POST   | /api/tasks     | Create a new task          |
+| PUT    | /api/tasks/:id | Update a task              |
+| DELETE | /api/tasks/:id | Delete a task              |
