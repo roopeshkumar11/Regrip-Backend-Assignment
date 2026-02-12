@@ -19,9 +19,9 @@ const sequelize = new Sequelize(process.env.DB_URL, {
 const connectDB = async () => {
   try {
     await sequelize.authenticate();
-    console.log("Supabase PostgreSQL Connected ✅");
+    console.log("Supabase PostgreSQL Connected");
   } catch (error) {
-    console.error("DB Connection Error ❌:", error);
+    console.error("DB Connection Error:", error);
   }
 };
 
